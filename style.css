@@ -1,0 +1,100 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #f2f2f2;
+}
+
+.quiz {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 20px;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	border-radius: 10px;
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+}
+
+h1 {
+	text-align: center;
+}
+
+.question {
+	margin-bottom: 20px;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 10px;
+}
+
+.question h2 {
+	margin-top: 20px;
+margin-bottom: 10px;
+}
+
+.answer-buttons {
+display: flex;
+justify-content: space-between;
+margin-top: 10px;
+}
+
+.answer-button {
+flex: 1;
+margin-right: 10px;
+}
+
+.answer-button:last-child {
+margin-right: 0;
+}
+
+.result {
+margin-top: 20px;
+padding: 10px;
+background-color: #f2f2f2;
+border: 1px solid #ccc;
+border-radius: 10px;
+text-align: center;
+}
+
+.result h2 {
+margin-bottom: 10px;
+}
+
+.result p {
+margin-bottom: 20px;
+}
+
+.button {
+display: block;
+margin: 0 auto;
+padding: 10px 20px;
+background-color: #4CAF50;
+color: #fff;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+}
+
+.button:hover {
+background-color: #3e8e41;
+}
+
+/* Adicionado estilo para a seleção de resposta */
+.selected {
+background-color: #4CAF50;
+color: #fff;
+}
+
+/* Adicionado estilo para a mensagem de erro */
+.error {
+color: #ff0000;
+font-size: 12px;
+margin-top: 5px;
+}
+
+.btn-selected {
+	background-color: green;
+	color: white;
+}

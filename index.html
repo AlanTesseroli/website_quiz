@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>Quiz de Contratação</title>
+</head>
+<body>
+	<div class="quiz">
+		<h1>Quiz de Contratação</h1>
+		<p>Você está buscando um candidato para sua empresa?</p>
+		<p>Responda as perguntas abaixo:</p>
+		<p>0 = "não preciso." -----   5 = "Preciso muito!"</p>
+
+		<!-- Pergunta 1 -->
+		<div class="question">
+			<h2>Você busca um jovem com vontade de aprender?</h2>
+			<div class="options">
+				<button class="btn" id="p1_1" onclick="setValor('p1_1')">1</button>
+				<button class="btn" id="p1_2" onclick="setValor('p1_2')">2</button>
+				<button class="btn" id="p1_3" onclick="setValor('p1_3')">3</button>
+				<button class="btn" id="p1_4" onclick="setValor('p1_4')">4</button>
+				<button class="btn" id="p1_5" onclick="setValor('p1_5')">5</button>
+			</div>
+		</div>
+		
+		<!-- Pergunta 2 -->
+		<div class="question">
+			<h2>Você busca uma pessoa com conhecimento frontend?</h2>
+			<div class="options">
+				<button class="btn" id="p2_1" onclick="setValor('p2_1')">1</button>
+				<button class="btn" id="p2_2" onclick="setValor('p2_2')">2</button>
+				<button class="btn" id="p2_3" onclick="setValor('p2_3')">3</button>
+				<button class="btn" id="p2_4" onclick="setValor('p2_4')">4</button>
+				<button class="btn" id="p2_5" onclick="setValor('p2_5')">5</button>
+			</div>
+		</div>
+		
+		<!-- Pergunta 3 -->
+		<div class="question">
+			<h2>Você busca uma pessoa determinada a aprender?</h2>
+			<div class="options">
+				<button class="btn" id="p3_1" onclick="setValor('p3_1')">1</button>
+				<button class="btn" id="p3_2" onclick="setValor('p3_2')">2</button>
+				<button class="btn" id="p3_3" onclick="setValor('p3_3')">3</button>
+				<button class="btn" id="p3_4" onclick="setValor('p3_4')">4</button>
+				<button class="btn" id="p3_5" onclick="setValor('p3_5')">5</button>
+			</div>
+		</div>
+
+		<!-- Botão de envio -->
+		<button class="submit" onclick="calcular()">Enviar</button>
+
+		<!-- Mensagem de resultado -->
+		<div class="resultado">
+			<p id="mensagem"></p>
+		</div>
+
+	</div>
+	<script src="quiz.js"></script>
+</body>
+</html>
